@@ -1,0 +1,14 @@
+.x{
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    justify-content: ;
+
+
+}
+.x div{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+
+}

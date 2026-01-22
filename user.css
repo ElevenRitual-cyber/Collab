@@ -1,0 +1,110 @@
+:root {
+  /* Backgrounds */
+  --bg-app: #FBF6EF;
+  --bg-main: #FFFFFF;
+  --bg-sidebar: #F9F7F3;
+  --bg-card: #ffffff7d;
+  --bg-highlight: #FFE3B3;
+  --bg-muted: #F2F2F2;
+
+  /* Primary brand */
+  --primary: #F7A531;
+  --primary-soft: #FFD89A;
+  --primary-dark: #E6951C;
+
+  /* Text */
+  --text-primary: #1E1E1E;
+  --text-secondary: #6B6B6B;
+  --text-muted: #9B9B9B;
+  --text-light: #FFFFFF;
+
+  /* Borders */
+  --border-light: #ECECEC;
+  --border-soft: #F0E9E1;
+
+  /* Icons */
+  --icon-default: #6F6F6F;
+  --icon-active: #F7A531;
+
+  /* Status */
+  --success: #3CB371;
+  --warning: #F7A531;
+  --danger: #FF6B6B;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 24px rgba(0,0,0,0.05);
+}
+:root {
+  --font-primary: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Inter", "SF Pro Display", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bg-main);
+    font-family: var(--font-primary);
+
+}
+.notes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sidenotes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.card{
+    width: 300px;
+    height: auto;
+    background-color:var(--primary);
+    border-radius: 5px;
+    padding: 0px  10px 10px 10px;
+    text-align: justify;
+
+}
+.card__header{
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: bolder;
+    padding:5px;
+    text-align: justify;
+}
+.ideas :is(img){
+    width: 500px;
+}
+.ideas__card__header{
+    display: flex;
+    gap: 20px;
+    color: var(--primary-dark);
+    font-weight: 900;
+}
+.ideas__card__memo{
+    text-align: justify;
+    width: 400px;
+}
+.checklist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.checklist__card{
+    display: flex;
+    align-items: center;
+    gap: 8px;   /* checkbox ↔ text spacing */
+    margin: -10px;
+
+}
+.tag{
+    margin-bottom: -2px;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+    color: var(--icon-default);
+}
